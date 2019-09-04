@@ -1,0 +1,6 @@
+framework module Pods_ProjectABC {
+  umbrella header "Pods-ProjectABC-umbrella.h"
+
+  export *
+  module * { export * }
+}
