@@ -38,7 +38,7 @@ extension DestinationLocationViewController: DestinationLocationViewModelDelegat
     
     func didSelectDestination(place: GMSPlace) {
       
-        destinationTextfield.text = "\(String(describing: place.name)) \(String(describing: place.placeID)) \(String(describing: place.attributions))"
+        destinationTextfield.text = "\(String(describing: place.name!))"
         dismiss(animated: true, completion: nil)
     }
     
