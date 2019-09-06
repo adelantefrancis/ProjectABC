@@ -7,8 +7,8 @@ target 'ProjectABC' do
 
   # Pods for ProjectABC
 
-	pod "TinyConstraints"
+	pod 'TinyConstraints'
   	pod 'GoogleMaps'
   	pod 'GooglePlaces'
-	
+	pod 'Alamofire', '~> 5.0.0-rc.1'
 end

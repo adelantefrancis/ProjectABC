@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DestinationLocationViewController" customModule="ProjectABC" customModuleProvider="target">
             <connections>
-                <outlet property="destinationTextfield" destination="KoH-qm-qPu" id="WfV-5y-1Rj"/>
                 <outlet property="mapView" destination="2aW-sB-OvN" id="e2E-mb-H84"/>
+                <outlet property="searchDisplayController" destination="wxM-GF-WRf" id="6C3-JZ-X01"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,65 +22,39 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KoH-qm-qPu">
-                    <rect key="frame" x="20" y="64" width="374" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="csN-yd-Wal"/>
-                    </constraints>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-eX-yhs">
-                    <rect key="frame" x="356" y="64" width="28" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="LEV-eX-yhs" secondAttribute="height" multiplier="0.7:1" id="fgb-Aw-kso"/>
-                    </constraints>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-sB-OvN" customClass="GMSMapView">
-                    <rect key="frame" x="0.0" y="194" width="414" height="414"/>
+                    <rect key="frame" x="0.0" y="134" width="414" height="414"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="2aW-sB-OvN" secondAttribute="height" multiplier="1:1" id="kT2-CK-tUW"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-1X-kt4">
-                    <rect key="frame" x="20" y="124" width="374" height="50"/>
+                    <rect key="frame" x="20" y="64" width="374" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" priority="750" constant="50" id="91V-vQ-lQe"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTv-hF-AFZ">
-                    <rect key="frame" x="179" y="74" width="30" height="30"/>
-                    <connections>
-                        <action selector="tappedDestination:" destination="-1" eventType="touchUpInside" id="z6G-bN-td9"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="0.81190598011016846" green="0.84566748142242432" blue="0.86731278896331787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="2aW-sB-OvN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0ih-aV-MOp"/>
-                <constraint firstItem="hTv-hF-AFZ" firstAttribute="centerY" secondItem="KoH-qm-qPu" secondAttribute="centerY" id="2qr-a7-8gX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KoH-qm-qPu" secondAttribute="trailing" constant="20" id="EVd-Qf-9rL"/>
-                <constraint firstItem="LEV-eX-yhs" firstAttribute="height" secondItem="KoH-qm-qPu" secondAttribute="height" id="Fju-9m-uLt"/>
-                <constraint firstItem="LEV-eX-yhs" firstAttribute="centerY" secondItem="KoH-qm-qPu" secondAttribute="centerY" id="MDG-Ge-YxZ"/>
-                <constraint firstItem="LEV-eX-yhs" firstAttribute="trailing" secondItem="KoH-qm-qPu" secondAttribute="trailing" constant="-10" id="P31-va-V1V"/>
                 <constraint firstItem="f9H-1X-kt4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PLN-eF-Iqu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2aW-sB-OvN" secondAttribute="trailing" id="TdV-gs-rGZ"/>
-                <constraint firstItem="hTv-hF-AFZ" firstAttribute="height" secondItem="KoH-qm-qPu" secondAttribute="height" id="Uf3-hn-aRC"/>
+                <constraint firstItem="f9H-1X-kt4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="UVD-7O-dOr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f9H-1X-kt4" secondAttribute="trailing" constant="20" id="XNA-Ok-Vfm"/>
-                <constraint firstItem="hTv-hF-AFZ" firstAttribute="centerX" secondItem="KoH-qm-qPu" secondAttribute="centerX" id="b81-fX-4IV"/>
-                <constraint firstItem="KoH-qm-qPu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="eu6-PI-2OS"/>
-                <constraint firstItem="f9H-1X-kt4" firstAttribute="top" secondItem="KoH-qm-qPu" secondAttribute="bottom" constant="20" id="kf4-Ar-MJP"/>
-                <constraint firstItem="hTv-hF-AFZ" firstAttribute="width" secondItem="KoH-qm-qPu" secondAttribute="width" id="ozl-j3-IgI"/>
                 <constraint firstItem="2aW-sB-OvN" firstAttribute="top" secondItem="f9H-1X-kt4" secondAttribute="bottom" constant="20" id="r7J-JJ-wD9"/>
-                <constraint firstItem="KoH-qm-qPu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ugi-lP-pbj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
+        <searchDisplayController id="wxM-GF-WRf">
+            <connections>
+                <outlet property="delegate" destination="-1" id="XS0-zO-tfv"/>
+                <outlet property="searchContentsController" destination="-1" id="aGn-kn-aHI"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="C8A-o7-6WD"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="hg2-OO-VgQ"/>
+            </connections>
+        </searchDisplayController>
     </objects>
-    <resources>
-        <image name="search" width="30" height="30"/>
-    </resources>
 </document>

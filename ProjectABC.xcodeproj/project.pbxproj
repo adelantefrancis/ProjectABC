@@ -16,6 +16,7 @@
 		4DD2D7F9232001BE00FDA1C6 /* ProjectABC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D7F7232001BE00FDA1C6 /* ProjectABC.xcdatamodeld */; };
 		4DD2D7FB232001BF00FDA1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2D7FA232001BF00FDA1C6 /* Assets.xcassets */; };
 		4DD2D7FE232001BF00FDA1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2D7FC232001BF00FDA1C6 /* LaunchScreen.storyboard */; };
+		4DD8422823229B0700AB3804 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8422723229B0700AB3804 /* Extensions.swift */; };
 		CDD4D542010B792127E90B03 /* Pods_ProjectABC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73778D3FC56BC67FD9365D2F /* Pods_ProjectABC.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		4DD2D7FA232001BF00FDA1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DD2D7FD232001BF00FDA1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD2D7FF232001BF00FDA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD8422723229B0700AB3804 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		73778D3FC56BC67FD9365D2F /* Pods_ProjectABC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectABC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38E21607B07AFE133C89526 /* Pods-ProjectABC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectABC.debug.xcconfig"; path = "Target Support Files/Pods-ProjectABC/Pods-ProjectABC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				4DD2D7FF232001BF00FDA1C6 /* Info.plist */,
 				4D237E9623200BC90039D3B6 /* Constant.swift */,
 				4DD2D7F7232001BE00FDA1C6 /* ProjectABC.xcdatamodeld */,
+				4DD8422723229B0700AB3804 /* Extensions.swift */,
 			);
 			path = ProjectABC;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				4D237E9723200BC90039D3B6 /* Constant.swift in Sources */,
 				4DD2D7F9232001BE00FDA1C6 /* ProjectABC.xcdatamodeld in Sources */,
 				4DD2D7F1232001BE00FDA1C6 /* AppDelegate.swift in Sources */,
+				4DD8422823229B0700AB3804 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,12 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A5UV35A4V;
 				INFOPLIST_FILE = ProjectABC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.projectabc.ios.ProjectABC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectabc.ios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,12 +417,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A5UV35A4V;
 				INFOPLIST_FILE = ProjectABC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.projectabc.ios.ProjectABC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectabc.ios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
